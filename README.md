@@ -1,4 +1,4 @@
-# chuck-norris-photo-mashup
+# Chuck Norris Photo Mashup
 
 __Website goals:__ create a small Rails app that delivers a Chuck Norris joke along with a Flickr Photo.  The photo will be obtained by first determining which terms in the Chuck Norris joke are nouns and then sampling from them to create a query for Flickr's photo search.
 
