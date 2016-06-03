@@ -3,7 +3,7 @@ require 'engtagger'
 module Tagger
   def self.get_keywords(joke)
     # remove non-word characters from joke
-    search_text = joke.gsub(/\.\,\?!/, '')
+    search_text = joke.gsub(/[\.\,\?!"']/, '')
 
     # remove Chuck Norris from the potential search terms
     search_text.gsub!("Chuck Norris", '')
