@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   post 'mashups/favorite' => 'mashups#favorite', as: "favorite"
   get 'mashups/favorites' => 'mashups#favorites', as: "favorites"
+  get 'mashups/nerdy' => 'mashups#nerdy', as: "nerdy"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
