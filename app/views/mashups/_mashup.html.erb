@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <% unless number.nil? %>
+      <h3 class="panel-title">Mashup #<%= number %></h3>
+    <% end %>
+  </div>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class="vert-align left-col">
+          <p class="favorite">
+            <%= link_to favorite_path(photo: photo, joke: joke), method: :post, class: "favorite-a" do %>
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            <% end %>
+          </p>
+          <% unless favorites.nil? %>
+            <p><%= favorites %></p>
+          <% end %>
+        </td>
+
+        <td class="middle-col">
+          <div class="media">
+            <div class="media-left media-middle middle-col-photo">
+              <img class="media-object" src="<%= photo %>">
+            </div>
+          </div>
+        </td>
+
+        <td class="right-col">
+          <div class="media">
+            <div class="media-body right-col">
+              <p class="media-heading joke"><%= raw joke %></p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
