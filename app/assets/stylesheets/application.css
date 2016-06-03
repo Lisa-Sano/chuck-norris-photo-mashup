@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+
+h1 {
+  text-align: center;
+}
+
+.chuck-logo {
+  width: 30%;
+  height: auto;
+}
+
+
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.table .left-col {
+  width: 70px;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+
+.favorite {
+  font-size: 3rem;
+  color: orange;
+}
+
+.table .middle-col {
+  width: 55%;
+}
+
+.table .middle-col-photo {
+  width: 75%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.joke {
+  font-size: 4rem;
+}
