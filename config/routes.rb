@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'mashups#index'
 
-  resources :mashups, only: [:index, :show]
+  resources :mashups, only: [:index]
+
+  post 'mashups/favorite' => 'mashups#favorite', as: "favorite"
+  get 'mashups/favorites' => 'mashups#favorites', as: "favorites"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

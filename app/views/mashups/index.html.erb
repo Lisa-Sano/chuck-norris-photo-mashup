@@ -1,5 +1,8 @@
 <h1>Chuck-Mash</h1>
+<p><%= link_to "New Chuck-mash!", mashups_path %></p>
 
 <p><%= raw @joke %></p>
-<p><%= raw @search_term %></p>
 <img src=<%= @photo.url %>>
+
+<p><%= link_to "This mashup rocks!", favorite_path(photo: @photo.url, joke: @joke), method: :post %></p>
+<p><%= link_to "See all favorites", favorites_path %></p>

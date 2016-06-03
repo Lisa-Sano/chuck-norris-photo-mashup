@@ -1,0 +1,9 @@
+<h1>Favorite Chuck-Mashes</h1>
+
+<% @mashups.each_with_index do |m, i| %>
+  <p><%= raw m.joke %></p>
+  <img src="<%= m.photo_url %>">
+  <%= link_to "This mashup rocks!", favorite_path(photo: m.photo_url, joke: m.joke), method: :post %>
+<% end %>
+
+<p><%= link_to "Random", mashups_path %></p>
