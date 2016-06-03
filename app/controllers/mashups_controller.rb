@@ -9,6 +9,13 @@ class MashupsController < ApplicationController
     @photo = Photo.find_photo(@search_term)
   end
 
+  def nerdy
+    @joke = ChuckJokeWrapper.nerdy["value"]["joke"]
+    @search_term = Tagger.get_keywords(@joke)
+    @photo = Photo.find_photo(@search_term)
+    render :index
+  end
+
   # make a show page for specific jokes (debugging purposes)
   # def show
   #   @joke = ChuckJokeWrapper.find_joke(params[:id])
@@ -18,7 +25,7 @@ class MashupsController < ApplicationController
   def favorite
     @mashup = Mashup.find_or_create_by(joke: params[:joke], photo_url: params[:photo])
     @mashup.add_favorite
-    redirect_to mashups_path
+    redirect_to favorites_path
   end
 
   def favorites
