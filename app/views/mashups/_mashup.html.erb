@@ -1,21 +1,15 @@
 <div class="panel panel-default">
-  <div class="panel-heading">
-    <% unless number.nil? %>
-      <h3 class="panel-title">Mashup #<%= number %></h3>
-    <% end %>
-  </div>
-
   <table class="table">
     <tbody>
       <tr>
         <td class="vert-align left-col">
           <p class="favorite">
             <%= link_to favorite_path(photo: photo, joke: joke), method: :post, class: "favorite-a" do %>
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <img class="favorite-logo" src="http://ih1.redbubble.net/image.52306500.4842/sticker,375x360.u2.png">
             <% end %>
           </p>
           <% unless favorites.nil? %>
-            <p><%= favorites %></p>
+            <p class="likes"><%= favorites %></p>
           <% end %>
         </td>
 

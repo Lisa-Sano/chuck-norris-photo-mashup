@@ -1,5 +1,5 @@
 <h1>Approved by Chuck Norris:</h1>
 
 <% @mashups.each_with_index do |m, i| %>
-  <%= render partial: "mashup", locals: { joke: m.joke, photo: m.photo_url, number: (i+1), favorites: m.favorites } %>
+  <%= render partial: "mashup", locals: { joke: m.joke, photo: m.photo_url, favorites: m.favorites } %>
 <% end %>
