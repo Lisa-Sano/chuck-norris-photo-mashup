@@ -3,7 +3,7 @@ class CreateMashups < ActiveRecord::Migration
     create_table :mashups do |t|
       t.string :photo_url, null: false
       t.string :joke, null: false
-      t.integer :favorites, default: 1
+      t.integer :favorites, default: 0
 
       t.timestamps null: false
     end

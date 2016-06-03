@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160603090841) do
   create_table "mashups", force: :cascade do |t|
     t.string   "photo_url",              null: false
     t.string   "joke",                   null: false
-    t.integer  "favorites",  default: 1
+    t.integer  "favorites",  default: 0
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
