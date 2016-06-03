@@ -19,11 +19,9 @@ h1 {
 }
 
 .chuck-logo {
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 50px;
 }
-
-
 
 .table>tbody>tr>td {
   vertical-align: middle;
@@ -34,14 +32,16 @@ h1 {
 }
 
 .table .left-col {
-  width: 70px;
+  width: 110px;
   text-align: center;
-  padding-left: 1.5rem;
 }
 
-.favorite {
-  font-size: 3rem;
-  color: orange;
+.favorite-logo {
+  width: 10.5rem;
+}
+
+.likes {
+  padding-left: 1rem;
 }
 
 .table .middle-col {
