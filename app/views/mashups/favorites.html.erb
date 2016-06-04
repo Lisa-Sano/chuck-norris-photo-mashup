@@ -3,3 +3,7 @@
 <% @mashups.each_with_index do |m, i| %>
   <%= render partial: "mashup", locals: { joke: m.joke, photo: m.photo_url, favorites: m.favorites } %>
 <% end %>
+
+<div class="text-center">
+  <%= will_paginate @mashups, renderer: BootstrapPagination::Rails, bootstrap: 3 %>
+</div>

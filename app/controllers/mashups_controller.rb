@@ -23,6 +23,6 @@ class MashupsController < ApplicationController
   end
 
   def favorites
-    @mashups = Mashup.order(favorites: :desc)
+    @mashups = Mashup.order(favorites: :desc).paginate(:page => params[:page], per_page: 10)
   end
 end
