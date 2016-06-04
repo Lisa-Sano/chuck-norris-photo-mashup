@@ -17,7 +17,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Nerdy</a>
+                    <a class="page-scroll" href="<%= nerdy_path %>">Nerdy</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="<%= mashups_path %>">Random</a>
@@ -40,7 +40,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Chuck•Mash</h1>
           <p class="intro-text">A Chuck Norris joke / photo mashup</p>
-          <a href="<%= favorites_path %>" class="btn btn-circle page-scroll">
+          <a href="#about" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
           </a>
         </div>
@@ -48,3 +48,60 @@
     </div>
   </div>
 </header>
+
+<!-- About Section -->
+<section id="about" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>About Chuck•Mash</h2>
+      <p>Chuck•Mash is a text/photo mashup using Chuck Norris jokes from the <a href="http://www.icndb.com/api/">Internet Chuck Norris Database</a> (ICNDB) and the <a href="https://www.flickr.com/services/api/">Flickr API</a>.</p>
+      <p>After a joke is retrieved from the ICNDB, key phrases are pulled out of the joke text using the ruby gem <a href="https://github.com/yohasebe/engtagger">EngTagger</a>. This becomes the search term for the Flickr photos.</p>
+      <p>Once a Mashup is created, users can favorite the best combinations and view the overall top favorited pairs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Contact Lisa</h2>
+      <p>Provide some feedback, report a bug, or just say hello!</p>
+      <p><a href="mailto:lisa.sano@gmail.com">lisa.sano@gmail.com</a>
+      </p>
+      <ul class="list-inline banner-social-buttons">
+        <li>
+            <a href="https://www.linkedin.com/in/lisa-rolczynski-507a1811" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <span class="network-name">LinkedIn</span></a>
+        </li>
+        <li>
+            <a href="https://github.com/Lisa-Sano/chuck-norris-photo-mashup" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/_lisa_sano_" class="btn btn-default btn-lg"><i class="fa fa-twitter" aria-hidden="true"></i> <span class="network-name">Twitter</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+<footer id="copyright">
+  <div class="container text-center">
+    <p>Copyright &copy; Lisa<span class="heart">❤︎</span>Sano 2016</p>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
