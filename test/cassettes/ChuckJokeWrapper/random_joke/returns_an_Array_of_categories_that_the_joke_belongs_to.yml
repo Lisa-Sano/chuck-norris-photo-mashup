@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.icndb.com/jokes/random?exclude=%5Bexplicit%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jun 2016 19:38:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9a46e6183ab637bf9e078f9cf40666391465069086; expires=Sun, 04-Jun-17
+        19:38:06 GMT; path=/; domain=.icndb.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Sat, 26 Jul 1997 05:00:00 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2addd7dc2aeb2a43-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{ "type": "success", "value": { "id": 381, "joke": "Diamonds are not,
+        despite popular belief, carbon. They are, in fact, Chuck Norris fecal matter.
+        This was proven a recently, when scientific analysis revealed what appeared
+        to be Jean-Claude Van Damme bone fragments inside the Hope Diamond.", "categories":
+        [] } }'
+    http_version: 
+  recorded_at: Sat, 04 Jun 2016 19:38:06 GMT
+recorded_with: VCR 3.0.3
