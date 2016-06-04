@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=cf98d073b9702a72f85d2c3abdfb49cb&format=json&method=flickr.photos.search&nojsoncallback=1&per_page=10&sort=relevance&text=Chuck%20Norris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jun 2016 19:19:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '512'
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www269.flickr.gq1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts102.flickr.gq1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        r11.ycpi.gq1.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+      Y-Trace:
+      - BAEAQAAAAABU254U0yS16wAAAAAAAAAAXb1UjaJU2gAAAAAAAAAAAAAFNHi3jL3JAAU0eLePFUNkygS_AAAAAA--
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photos":{"page":1,"pages":1700,"perpage":10,"total":"16993","photo":[{"id":"8488371245","owner":"92828648@N08","secret":"738f0c3754","server":"8374","farm":9,"title":"chuck
+        norris @ white house","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4461141071","owner":"90324115@N00","secret":"b449ca6069","server":"4043","farm":5,"title":"Chuck
+        Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4562684830","owner":"47696063@N00","secret":"b4e069287e","server":"3439","farm":4,"title":"Chuck
+        Norris at Actionfest - Carlos Ray Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4562684610","owner":"47696063@N00","secret":"a3677206ff","server":"3436","farm":4,"title":"Chuck
+        Norris at Actionfest - Carlos Ray Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4562054879","owner":"47696063@N00","secret":"c42005f25f","server":"3170","farm":4,"title":"Chuck
+        Norris at Actionfest - Carlos Ray Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4562055069","owner":"47696063@N00","secret":"4976c626f5","server":"4035","farm":5,"title":"Chuck
+        Norris at Actionfest - Carlos Ray Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4562685006","owner":"47696063@N00","secret":"9304660767","server":"3282","farm":4,"title":"Chuck
+        Norris at Actionfest - Carlos Ray Norris","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6400282455","owner":"68062623@N05","secret":"f2926a0c0c","server":"7159","farm":8,"title":"Chuck_norris_dvd_serie_1","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6784147451","owner":"75462721@N02","secret":"644cd463f0","server":"7152","farm":8,"title":"Chuck
+        Norris  Lou Ferrigno","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6388939117","owner":"47613318@N00","secret":"113983bf42","server":"7146","farm":8,"title":"Chuck
+        Norris does Movember","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+    http_version: 
+  recorded_at: Sat, 04 Jun 2016 19:19:23 GMT
+recorded_with: VCR 3.0.3

@@ -16,8 +16,13 @@ class Photo
   end
 
   def self.find_photo(search)
+    # cannot search on Flickr's API with an empty string--assign it if needed
+    search = "Chuck Norris" if search.empty?
+
     photos = HTTParty.get(BASE_URL + URI.escape("?method=flickr.photos.search&sort=relevance&format=json&text=#{search}&per_page=10&nojsoncallback=1&api_key=" + ENV["FLICKR_KEY"])).parsed_response
-    return self.find_photo("Chuck Norris") if photos["photos"]["photo"].empty?
+
+    # if search doesn't return any results, use a default chuck norris photo
+    return new({"id"=>"8488371245", "secret"=>"738f0c3754", "server"=>"8374", "farm"=>9}) if photos["photos"]["photo"].empty?
     new(photos["photos"]["photo"].sample)
   end
 
