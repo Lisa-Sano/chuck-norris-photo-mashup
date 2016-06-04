@@ -40,7 +40,16 @@
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Chuck•Mash</h1>
           <p class="intro-text">A Chuck Norris joke / photo mashup</p>
-          <a href="#about" class="btn btn-circle page-scroll">
+          <script>
+              $(document).ready(function (){
+                  $("#click").click(function (){
+                      $('html, body').animate({
+                          scrollTop: $("#about").offset().top
+                      }, 700);
+                  });
+              });
+          </script>
+          <a href="#about" id="click" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
           </a>
         </div>
