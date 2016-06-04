@@ -369,17 +369,3 @@ body {
   webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-a[ id="about" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
-}
-
-a[ id="contact" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-a[ id="copyright" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
-}
-
