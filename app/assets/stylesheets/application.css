@@ -19,7 +19,8 @@ body {
   height: 100%;
   font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #000;
-  background: url(../assets/chuck.jpg) no-repeat bottom center fixed;
+  /*background: url(../assets/chuck.jpg) no-repeat bottom center fixed;*/
+  background-color: rgb(42,42,42);
 }
 
 h1 {
@@ -69,4 +70,17 @@ img {
 
 .joke {
   font-size: 4rem;
+  /*text-shadow: 2px 2px 5px #000;*/
+}
+
+.panel-transparent {
+  /*background: rgba(199, 185, 169, 0.9);*/
+  background: #cccccc;
+  border: solid 2px black;
+}
+
+.heart {
+  font-size: 0.9rem;
+  vertical-align: middle;
+  color: #cc0088;
 }
