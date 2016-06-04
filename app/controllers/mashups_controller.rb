@@ -16,12 +16,6 @@ class MashupsController < ApplicationController
     render :index
   end
 
-  # make a show page for specific jokes (debugging purposes)
-  # def show
-  #   @joke = ChuckJokeWrapper.find_joke(params[:id])
-  #   render :index
-  # end
-
   def favorite
     @mashup = Mashup.find_or_create_by(joke: params[:joke], photo_url: params[:photo])
     @mashup.add_favorite

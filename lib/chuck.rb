@@ -12,8 +12,4 @@ module ChuckJokeWrapper
   def self.nerdy
     HTTParty.get(BASE_URL + 'jokes/random?limitTo=[nerdy]').parsed_response
   end
-
-  def self.find_joke(id)
-    HTTParty.get(BASE_URL + "jokes/#{id}").parsed_response
-  end
 end
