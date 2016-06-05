@@ -1,7 +1,33 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Mashup.create!([
+  {photo_url: "https://farm3.staticflickr.com/2349/2124233959_24d740234a.jpg", joke: "Chuck Norris could use anything in java.util.* to kill you, including the javadocs.", favorites: 1},
+  {photo_url: "https://farm8.staticflickr.com/7769/17577318121_cfec5849cd.jpg", joke: "Chuck Norris was the orginal sculptor of Mount Rushmore. He completed the entire project using only a bottle opener and a drywall trowel.", favorites: 1},
+  {photo_url: "https://farm3.staticflickr.com/2442/3980106368_72910a690b.jpg", joke: "Ninjas want to grow up to be just like Chuck Norris. But usually they grow up just to be killed by Chuck Norris.", favorites: 1},
+  {photo_url: "https://farm3.staticflickr.com/2923/14069578912_426f0556cf.jpg", joke: "Chuck Norris has never been in a fight, ever. Do you call one roundhouse kick to the face a fight?", favorites: 1},
+  {photo_url: "https://farm6.staticflickr.com/5197/5854361826_96ff82fbb3.jpg", joke: "Chuck Norris once went skydiving, but promised never to do it again. One Grand Canyon is enough.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3893/14785122795_18048c6b2e.jpg", joke: "Time waits for no man. Unless that man is Chuck Norris.", favorites: 1},
+  {photo_url: "https://farm8.staticflickr.com/7380/10207816156_d379692f44.jpg", joke: "Maslow's theory of higher needs does not apply to Chuck Norris. He only has two needs: killing people and finding people to kill.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3593/3524302375_6c1687bebc.jpg", joke: "Chuck Norris killed two stones with one bird.", favorites: 4},
+  {photo_url: "https://farm5.staticflickr.com/4083/5043828645_3ab8362c94.jpg", joke: "Simply by pulling on both ends, Chuck Norris can stretch diamonds back into coal.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3719/13510004394_3bcd2d1d20.jpg", joke: "Scientifically speaking, it is impossible to charge Chuck Norris with &quot;obstruction of justice.&quot; This is because even Chuck Norris cannot be in two places at the same time.", favorites: 1},
+  {photo_url: "https://farm8.staticflickr.com/7051/6949254331_9dbbd5c03e.jpg", joke: "Chuck Norris has banned rainbows from the state of North Dakota.", favorites: 1},
+  {photo_url: "https://farm8.staticflickr.com/7345/10239778885_a4c8120e77.jpg", joke: "Chuck Norris doesn't actually write books, the words assemble themselves out of fear.", favorites: 1},
+  {photo_url: "https://farm7.staticflickr.com/6059/6426488339_c5c89a8c75.jpg", joke: "Chuck Norris killed two stones with one bird.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3949/15465913887_2792a78ce5.jpg", joke: "For undercover police work, Chuck Norris pins his badge underneath his shirt, directly into his chest.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3221/2417338632_d5ce17dd11.jpg", joke: "Industrial logging isn't the cause of deforestation. Chuck Norris needs toothpicks.", favorites: 2},
+  {photo_url: "https://farm7.staticflickr.com/6216/6280927629_9c56d970b8.jpg", joke: "Chuck Norris can judge a book by its cover.", favorites: 1},
+  {photo_url: "https://farm8.staticflickr.com/7337/13139820963_0c01c8ed41.jpg", joke: "Chuck Norris knows the last digit of PI.", favorites: 1},
+  {photo_url: "https://farm9.staticflickr.com/8102/8451858109_e8724ab269.jpg", joke: "When Chuck Norris goes to out to eat, he orders a whole chicken, but he only eats its soul.", favorites: 3},
+  {photo_url: "https://farm8.staticflickr.com/7605/16791717165_4ede61eb5b.jpg", joke: "Chuck Norris once round-house kicked a salesman. Over the phone.", favorites: 1},
+  {photo_url: "https://farm4.staticflickr.com/3182/2826322776_98193db094.jpg", joke: "Chuck Norris uses 8'x10' sheets of plywood as toilet paper.", favorites: 2},
+  {photo_url: "https://farm9.staticflickr.com/8089/8581985835_60c83e373d.jpg", joke: "Chuck Norris can overflow your stack just by looking at it.", favorites: 4},
+  {photo_url: "https://farm9.staticflickr.com/8647/16516901887_b238a273e2.jpg", joke: "Jesus can walk on water, but Chuck Norris can swim through land.", favorites: 3},
+  {photo_url: "https://farm9.staticflickr.com/8532/8683011705_96bed56b3e.jpg", joke: "Chuck Norris is the only man to ever defeat a brick wall in a game of tennis.", favorites: 5},
+  {photo_url: "https://farm4.staticflickr.com/3282/2728505583_e6836b3eab.jpg", joke: "Chuck Norris invented black. In fact, he invented the entire spectrum of visible light. Except pink. Tom Cruise invented pink.", favorites: 1},
+  {photo_url: "https://farm1.staticflickr.com/143/405175441_c7927c327c.jpg", joke: "Chuck Norris knows the value of NULL, and he can sort by it too.", favorites: 1},
+  {photo_url: "https://farm7.staticflickr.com/6164/6248690693_bc425a3de6.jpg", joke: "They once made a Chuck Norris toilet paper, but there was a problem-- It wouldn't take shit from anybody.", favorites: 1},
+  {photo_url: "https://farm3.staticflickr.com/2669/3984799550_e3c43943fc.jpg", joke: "Chuck Norris destroyed the periodic table, because Chuck Norris only recognizes the element of surprise.", favorites: 1},
+  {photo_url: "https://farm6.staticflickr.com/5092/5558636209_1c93d485d1.jpg", joke: "The Bermuda Triangle used to be the Bermuda Square, until Chuck Norris Roundhouse kicked one of the corners off.", favorites: 1},
+  {photo_url: "https://farm6.staticflickr.com/5532/9349760419_dbf3c2fd9b.jpg", joke: "Chuck Norris plays racquetball with a waffle iron and a bowling ball.", favorites: 4},
+  {photo_url: "https://farm9.staticflickr.com/8446/7999637066_de2b4abcee.jpg", joke: "When Chuck Norris falls in water, Chuck Norris doesn't get wet. Water gets Chuck Norris.", favorites: 7},
+  {photo_url: "https://farm8.staticflickr.com/7092/7397393624_09efb54696.jpg", joke: "Code runs faster when Chuck Norris watches it.", favorites: 1}
+])
