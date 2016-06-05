@@ -91,15 +91,15 @@ img {
 .pagination > li > span:focus,
 .pagination > li > span:hover {
     z-index: 3;
-    color: #00e677;
-    background-color: #004d28;
+    color: #fff;
+    background-color: #004d00;
     border-color: #ddd;
 }
 
 .pagination>.active>span, 
 .pagination>.active>span:hover {
   background-color: #008000;
-  border-color: #00b359;
+  border-color: #00b300;
 }
 
 .pagination>li>a, 
