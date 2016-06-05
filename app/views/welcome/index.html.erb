@@ -42,10 +42,11 @@
           <p class="intro-text">A Chuck Norris joke / photo mashup</p>
           <script>
               $(document).ready(function (){
-                  $("#click").click(function (){
+                  $("#click").click(function (event){
+                      event.preventDefault();
                       $('html, body').animate({
                           scrollTop: $("#about").offset().top
-                      }, 700);
+                      }, 500);
                   });
               });
           </script>
