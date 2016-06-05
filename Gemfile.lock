@@ -67,6 +67,8 @@ GEM
     engtagger (0.2.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    font-awesome-rails (4.6.3.0)
+      railties (>= 3.2, < 5.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
@@ -200,6 +202,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dotenv-rails
   engtagger
+  font-awesome-rails
   httparty
   jbuilder (~> 2.0)
   jquery-rails
