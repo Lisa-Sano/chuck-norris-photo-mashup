@@ -16,3 +16,16 @@ __Tech/skill dependencies:__
 - API's returning JSON ([Chuck Norris API](http://www.icndb.com/api/), [Flickr API](https://www.flickr.com/services/api/))
 
 I will be done and successful when any user visiting the site can see a Chuck Norris joke with a picture that is somewhat related to the content of the joke. There should also be an obligatory photo of Chuck Norris and a button to get another joke/picture.
+
+__What I learned:__
+- The importance of testing (found multiple things broken that I thought were working!)
+- Pagination
+- Favicons
+- Making the collapsable nav bar buttons work on small screens
+
+__Challenges along the way:__
+- Finding the best search queries for photos (a noun? multiple nouns? a noun phrase?)
+- Dealing with photo searches that produced no results, or empty search queries from certain jokes
+- Controller testing (had to bypass VCR and Webmock)
+- Google Font/Favicon issues
+- Customizing landing page templates is hard
